@@ -1,0 +1,34 @@
+@import "./utils/variables";
+@import "./utils/fonts";
+@import "./utils/reset";
+
+@import "./components/container";
+@import "./components/tab";
+@import "./components/linear-button";
+@import "./components/title";
+@import "./components/secondary-button";
+
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/discounts";
+@import "./layouts/description";
+@import "./layouts/popular";
+
+body {
+  font-family: $font-source-sans-pro;
+  font-weight: 700;
+  font-size: 18px;
+
+  min-height: 100%;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 1;
+}

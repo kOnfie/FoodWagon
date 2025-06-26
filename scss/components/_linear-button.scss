@@ -1,0 +1,11 @@
+.linear-button {
+  color: $color-white;
+  font-weight: 700;
+
+  padding: 1.0625rem 3rem;
+
+  background: linear-gradient(95.71deg, rgba(255, 122, 122, 1) 0%, rgba(246, 89, 0, 1) 100%);
+  border-radius: 0.5rem;
+
+  cursor: pointer;
+}

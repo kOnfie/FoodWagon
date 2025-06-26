@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodWagon</title>
+
+    <link rel="icon" type="image/svg" href="./images/icons/logo.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- header -->
+      <header class="header">
+        <div class="container">
+          <div class="header__location header__location--adaptive">
+            <p class="header__location--deliver">Deliver to:</p>
+
+            <svg class="header__location--icon" width="14" height="20" viewBox="0 0 14 20">
+              <use href="./images/sprite.svg#location"></use>
+            </svg>
+            <p class="header__location--text">
+              Current Location
+              <span class="header__location--name">Mohammadpur Bus Stand, Dhaka</span>
+            </p>
+          </div>
+          <div class="header__body">
+            <div class="header__wrapper">
+              <div class="header__logo">
+                <img src="./images/logo.png" alt="Burger" />
+                <p>food<span>wagon</span></p>
+              </div>
+
+              <div class="header__location header__location--main">
+                <p class="header__location--deliver">Deliver to:</p>
+
+                <svg class="header__location--icon" width="14" height="20" viewBox="0 0 14 20">
+                  <use href="./images/sprite.svg#location"></use>
+                </svg>
+                <p class="header__location--text">
+                  Current Location
+                  <span class="header__location--name">Mohammadpur Bus Stand, Dhaka</span>
+                </p>
+              </div>
+
+              <div class="header__actions">
+                <div class="header__search">
+                  <img src="./images/search.png" alt="search" />
+
+                  <input type="text" name="search" id="search" placeholder="Search Food" />
+                </div>
+
+                <button class="header__login header__login--btn">
+                  <img src="./images/user.png" alt="Auth user" />
+                  <p>Login</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- header end -->
+
+      <!-- main -->
+      <main class="main">
+        <!-- hero -->
+        <section class="hero">
+          <div class="hero__container container">
+            <div class="hero__body">
+              <h1 class="hero__title">Are you starving?</h1>
+              <p class="hero__description">Within a few clicks, find meals that are accessible near you</p>
+
+              <div class="hero__order">
+                <div class="hero__order--top">
+                  <button class="hero__tab tab active" id="delivery--button">
+                    <svg class="hero__tab--icon" width="23" height="18" viewBox="0 0 23 18">
+                      <use href="./images/sprite.svg#delivery"></use>
+                    </svg>
+                    <p>Delivery</p>
+                  </button>
+                  <button class="hero__tab tab" id="pickup--button">
+                    <svg class="hero__tab--icon" width="23" height="18" viewBox="0 0 23 18">
+                      <use href="./images/sprite.svg#pickup"></use>
+                    </svg>
+                    Pickup
+                  </button>
+                </div>
+
+                <div class="hero__order--bottom">
+                  <div class="hero__order--input">
+                    <svg class="hero__order--icon" width="14" height="20" viewBox="0 0 14 20">
+                      <use href="./images/sprite.svg#location"></use>
+                    </svg>
+                    <input type="text" placeholder="Enter Your Address" />
+                  </div>
+
+                  <button class="hero__order--button linear-button">
+                    <svg width="14" height="20" viewBox="0 0 14 20">
+                      <use href="./images/sprite.svg#search"></use>
+                    </svg>
+                    <p>Find Food</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <img class="hero__image" src="./images/hero/vermicelli.png" alt="vermicelli" />
+          </div>
+        </section>
+        <!-- hero end -->
+
+        <!-- discounts -->
+        <section class="discounts">
+          <div class="container">
+            <div class="discounts__body">
+              <div class="discounts__cards">
+                <div class="discounts__card">
+                  <div class="discounts__card--img">
+                    <img src="./images/discounts/photo_1.jpg" alt="Photo_1" />
+                    <div class="discounts__card--number">
+                      <p>15</p>
+                      <div class="discounts__card--interest">
+                        <span>%</span>
+                        <br />
+                        <p>off</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p class="discounts__card--name">Greys Vage</p>
+
+                  <div class="discounts__card--remaining">6 Days Remaining</div>
+                </div>
+                <div class="discounts__card">
+                  <div class="discounts__card--img">
+                    <img src="./images/discounts/photo_2.jpg" alt="Photo_1" />
+                    <div class="discounts__card--number">
+                      <p>15</p>
+                      <div class="discounts__card--interest">
+                        <span>%</span>
+                        <br />
+                        <p>off</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p class="discounts__card--name">Greys Vage</p>
+
+                  <div class="discounts__card--remaining">6 Days Remaining</div>
+                </div>
+                <div class="discounts__card">
+                  <div class="discounts__card--img">
+                    <img src="./images/discounts/photo_3.jpg" alt="Photo_1" />
+                    <div class="discounts__card--number">
+                      <p>15</p>
+                      <div class="discounts__card--interest">
+                        <span>%</span>
+                        <br />
+                        <p>off</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p class="discounts__card--name">Greys Vage</p>
+
+                  <div class="discounts__card--remaining">6 Days Remaining</div>
+                </div>
+                <div class="discounts__card">
+                  <div class="discounts__card--img">
+                    <img src="./images/discounts/photo_4.jpg" alt="Photo_1" />
+                    <div class="discounts__card--number">
+                      <p>15</p>
+                      <div class="discounts__card--interest">
+                        <span>%</span>
+                        <br />
+                        <p>off</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p class="discounts__card--name">Greys Vage</p>
+
+                  <div class="discounts__card--remaining">6 Days Remaining</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- discounts end -->
+
+        <!-- description -->
+        <section class="description">
+          <div class="description__container">
+            <div class="description__body">
+              <h2 class="description__title title">How does it work</h2>
+
+              <div class="description__cards">
+                <div class="description__card">
+                  <img src="./images/description/location.png" alt="Location" />
+                  <div class="description__card--body">
+                    <h6>Select location</h6>
+                    <p>Choose the location where your food will be delivered</p>
+                  </div>
+                </div>
+                <div class="description__card">
+                  <img src="./images/description/order.png" alt="Location" />
+                  <div class="description__card--body">
+                    <h6>Choose order</h6>
+                    <p>Check over hundreds of menus to pick your favorite food</p>
+                  </div>
+                </div>
+                <div class="description__card">
+                  <img src="./images/description/pay.png" alt="Location" />
+                  <div class="description__card--body">
+                    <h6>Pay advanced</h6>
+                    <p>It's quick, safe, and simple. Select several methods of payment</p>
+                  </div>
+                </div>
+                <div class="description__card">
+                  <img src="./images/description/enjoy.png" alt="Location" />
+                  <div class="description__card--body">
+                    <h6>Enjoy meals</h6>
+                    <p>Food is made and delivered directly to your home</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- description end -->
+
+        <!-- popular -->
+        <section class="popular">
+          <div class="popular__container">
+            <h2 class="popular__title title">Popular items</h2>
+            <div class="popular__body">
+              <div class="popular__cards">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide popular__card">
+                      <div>
+                        <img class="popular__card--img" src="./images/popular/cheese-burger.jpg" alt="Cheese Burger" />
+                        <h6 class="popular__card--name">Cheese Burger</h6>
+                        <p class="popular__card--restaurant">Burger Arena</p>
+                        <p class="popular__card--price">$3.88</p>
+                      </div>
+
+                      <button class="popular__card--button secondary-button">Order Now</button>
+                    </div>
+                    <div class="swiper-slide popular__card">
+                      <div>
+                        <img class="popular__card--img" src="./images/popular/toffe’s-cake.jpg" alt="Toffe’s Cake" />
+                        <h6 class="popular__card--name">Toffe’s Cake</h6>
+                        <p class="popular__card--restaurant">Top Sticks</p>
+                        <p class="popular__card--price">$4.00</p>
+                      </div>
+
+                      <button class="popular__card--button secondary-button">Order Now</button>
+                    </div>
+                    <div class="swiper-slide popular__card">
+                      <div>
+                        <img class="popular__card--img" src="./images/popular/dancake.jpg" alt="Dancake" />
+                        <h6 class="popular__card--name">Dancake</h6>
+                        <p class="popular__card--restaurant">Cake World</p>
+                        <p class="popular__card--price">$1.99</p>
+                      </div>
+
+                      <button class="popular__card--button secondary-button">Order Now</button>
+                    </div>
+                    <div class="swiper-slide popular__card">
+                      <div>
+                        <img
+                          class="popular__card--img"
+                          src="./images/popular/crispy-sandwitch.jpg"
+                          alt="Crispy Sandwitch"
+                        />
+                        <h6 class="popular__card--name">Crispy Sandwitch</h6>
+                        <p class="popular__card--restaurant">Fastfood Dine</p>
+                        <p class="popular__card--price">$3.00</p>
+                      </div>
+
+                      <button class="popular__card--button secondary-button">Order Now</button>
+                    </div>
+                    <div class="swiper-slide popular__card">
+                      <div>
+                        <img class="popular__card--img" src="./images/popular/thai-soup.jpg" alt="Thai  Soup" />
+                        <h6 class="popular__card--name">Thai Soup</h6>
+                        <p class="popular__card--restaurant">Foody man</p>
+                        <p class="popular__card--price">$2.72</p>
+                      </div>
+
+                      <button class="popular__card--button secondary-button">Order Now</button>
+                    </div>
+                    <div class="swiper-slide popular__card">
+                      <div>
+                        <img class="popular__card--img" src="./images/popular/cheese-burger.jpg" alt="Cheese Burger" />
+                        <h6 class="popular__card--name">Cheese Burger</h6>
+                        <p class="popular__card--restaurant">Burger Arena</p>
+                        <p class="popular__card--price">$3.88</p>
+                      </div>
+
+                      <button class="popular__card--button secondary-button">Order Now</button>
+                    </div>
+                    <div class="swiper-slide popular__card">
+                      <div>
+                        <img class="popular__card--img" src="./images/popular/toffe’s-cake.jpg" alt="Toffe’s Cake" />
+                        <h6 class="popular__card--name">Toffe’s Cake</h6>
+                        <p class="popular__card--restaurant">Top Sticks</p>
+                        <p class="popular__card--price">$4.00</p>
+                      </div>
+
+                      <button class="popular__card--button secondary-button">Order Now</button>
+                    </div>
+                    <div class="swiper-slide popular__card">
+                      <div>
+                        <img class="popular__card--img" src="./images/popular/dancake.jpg" alt="Dancake" />
+                        <h6 class="popular__card--name">Dancake</h6>
+                        <p class="popular__card--restaurant">Cake World</p>
+                        <p class="popular__card--price">$1.99</p>
+                      </div>
+
+                      <button class="popular__card--button secondary-button">Order Now</button>
+                    </div>
+                    <div class="swiper-slide popular__card">
+                      <div>
+                        <img
+                          class="popular__card--img"
+                          src="./images/popular/crispy-sandwitch.jpg"
+                          alt="Crispy Sandwitch"
+                        />
+                        <h6 class="popular__card--name">Crispy Sandwitch</h6>
+                        <p class="popular__card--restaurant">Fastfood Dine</p>
+                        <p class="popular__card--price">$3.00</p>
+                      </div>
+
+                      <button class="popular__card--button secondary-button">Order Now</button>
+                    </div>
+                    <div class="swiper-slide popular__card">
+                      <div>
+                        <img class="popular__card--img" src="./images/popular/thai-soup.jpg" alt="Thai  Soup" />
+                        <h6 class="popular__card--name">Thai Soup</h6>
+                        <p class="popular__card--restaurant">Foody man</p>
+                        <p class="popular__card--price">$2.72</p>
+                      </div>
+
+                      <button class="popular__card--button secondary-button">Order Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </section>
+        <!-- popular end -->
+      </main>
+      <!-- main end -->
+
+      <!-- footer -->
+      <footer class="footer">footer</footer>
+      <!-- footer end -->
+    </div>
+  </body>
+</html>
