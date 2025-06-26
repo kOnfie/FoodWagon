@@ -36,6 +36,10 @@
     }
 
     &--restaurant {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
       color: $color-primary;
       font-weight: 400;
     }
@@ -108,7 +112,7 @@
     content: "";
     display: block;
 
-    background-image: url("../../images/popular/arrow.svg");
+    background-image: url("/images/popular/arrow.svg");
     background-repeat: no-repeat;
 
     width: 1.25rem;

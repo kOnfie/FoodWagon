@@ -7,12 +7,14 @@
 @import "./components/linear-button";
 @import "./components/title";
 @import "./components/secondary-button";
+@import "./components/primary-button";
 
 @import "./layouts/header";
 @import "./layouts/hero";
 @import "./layouts/discounts";
 @import "./layouts/description";
 @import "./layouts/popular";
+@import "./layouts/restaurants";
 
 body {
   font-family: $font-source-sans-pro;
