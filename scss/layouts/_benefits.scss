@@ -1,0 +1,75 @@
+.benefits {
+  background-color: $background-yellow;
+
+  padding: 8.125rem 0rem 5rem 0rem;
+
+  &__items {
+    background-color: $color-white;
+    border-radius: 2.875rem;
+
+    padding: 3.4375rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0px 27px 82px 0px rgba(255, 174, 0, 0.28), 0px 14px 15px 0px rgba(255, 174, 0, 0.01);
+  }
+
+  &__item {
+    display: flex;
+    gap: 1.875rem;
+    align-items: center;
+
+    p {
+      background: linear-gradient(92.84deg, rgba(251, 60, 0, 1) 0%, rgba(255, 184, 0, 1) 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      font-size: 2.1875rem;
+    }
+  }
+
+  &__line {
+    width: 0.125rem;
+    height: 6rem;
+    background-color: #cfcfcf;
+
+    margin: 0 1.25rem;
+  }
+
+  @media (max-width: $bp-laptop-m) {
+    &__items {
+      flex-direction: column;
+    }
+
+    &__line {
+      transform: rotate(90deg);
+    }
+  }
+
+  @media (max-width: $bp-mobile-xl) {
+    padding: 2rem 0rem;
+
+    &__items {
+      padding: 1.5rem;
+    }
+
+    &__item {
+      gap: 1rem;
+
+      p {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  @media (max-width: $bp-mobile-l) {
+    &__item {
+      img {
+        max-width: 100px;
+      }
+    }
+  }
+}
