@@ -248,7 +248,7 @@
             <h2 class="popular__title title">Popular items</h2>
             <div class="popular__body">
               <div class="popular__cards">
-                <div class="swiper mySwiper">
+                <div class="swiper mySwiper mySwiper-popular">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide popular__card">
                       <div>
@@ -412,8 +412,8 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next swiper-button-next-popular swiper-arrow"></div>
+              <div class="swiper-button-prev swiper-button-prev-popular swiper-arrow"></div>
             </div>
           </div>
         </section>
@@ -543,6 +543,83 @@
           </div>
         </section>
         <!-- restaurants end -->
+
+        <!-- search -->
+        <section class="search">
+          <div class="container">
+            <div class="search__body">
+              <div class="search__header">
+                <h2 class="search__title title">Search by Food</h2>
+
+                <div class="search__actions search__actions--main">
+                  <button class="search__actions--link">
+                    <p>View All</p>
+                    <svg class="restaurants__button--icon" width="10" height="15" viewBox="0 0 10 15">
+                      <use href="./images/sprite.svg#button__arrow"></use>
+                    </svg>
+                  </button>
+
+                  <div class="search__actions--tabs">
+                    <div class="swiper-button-next swiper-button-next-search swiper-arrow"></div>
+                    <div class="swiper-button-prev swiper-button-prev-search swiper-arrow"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper mySwiper mySwiper-search">
+                <div class="search__items swiper-wrapper">
+                  <div class="search__item swiper-slide">
+                    <img src="./images/search/pizza.jpg" alt="Pizza" />
+                    <p>Pizza</p>
+                  </div>
+                  <div class="search__item swiper-slide">
+                    <img src="./images/search/burger.jpg" alt="Burger" />
+                    <p>Burger</p>
+                  </div>
+                  <div class="search__item swiper-slide">
+                    <img src="./images/search/noodles.jpg" alt="Noodles" />
+                    <p>Noodles</p>
+                  </div>
+                  <div class="search__item swiper-slide">
+                    <img src="./images/search/sub-sandwich.jpg" alt="Sub-sandwich" />
+                    <p>Sub-sandwich</p>
+                  </div>
+                  <div class="search__item swiper-slide">
+                    <img src="./images/search/chowmein.jpg" alt="Chowmein" />
+                    <p>Chowmein</p>
+                  </div>
+                  <div class="search__item swiper-slide">
+                    <img src="./images/search/steak.jpg" alt="Steak" />
+                    <p>Steak</p>
+                  </div>
+                  <div class="search__item swiper-slide">
+                    <img src="./images/search/chowmein.jpg" alt="Chowmein" />
+                    <p>Chowmein</p>
+                  </div>
+                  <div class="search__item swiper-slide">
+                    <img src="./images/search/steak.jpg" alt="Steak" />
+                    <p>Steak</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="search__actions search__actions--adaptive">
+                <button class="search__actions--link">
+                  <p>View All</p>
+                  <svg class="restaurants__button--icon" width="10" height="15" viewBox="0 0 10 15">
+                    <use href="./images/sprite.svg#button__arrow"></use>
+                  </svg>
+                </button>
+
+                <div class="search__actions--tabs">
+                  <div class="swiper-button-next swiper-button-next-search swiper-arrow"></div>
+                  <div class="swiper-button-prev swiper-button-prev-search swiper-arrow"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- search end -->
       </main>
       <!-- main end -->
 

@@ -72,6 +72,10 @@
     &__card {
       text-align: center;
 
+      &--restaurant {
+        justify-content: center;
+      }
+
       &--img {
         width: 100%;
       }
@@ -79,7 +83,7 @@
   }
 
   @media (max-width: $bp-mobile-xl) {
-    padding-bottom: 7rem;
+    padding-bottom: 8rem;
 
     &__title {
       font-size: 1.875rem;
@@ -92,40 +96,15 @@
   }
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  background-color: $color-yellow;
-
-  color: $color-white;
-
-  width: 4.75rem;
-  height: 4.75rem;
-
-  display: grid;
-  place-content: center;
-
-  border-radius: 50%;
-
-  box-shadow: 0px 14px 32px 0px rgba(255, 178, 14, 0.29), 0px 5px 8px 0px rgba(222, 151, 0, 0.24);
-
-  &:after {
-    content: "";
-    display: block;
-
-    background-image: url("/images/popular/arrow.svg");
-    background-repeat: no-repeat;
-
-    width: 1.25rem;
-    height: 1.875rem;
-  }
-
+.swiper-button-prev-popular,
+.swiper-button-next-popular {
   @media (max-width: $bp-tablet) {
     top: auto;
     bottom: -100px;
   }
 }
 
-.swiper-button-next {
+.swiper-button-next-popular {
   &:after {
     transform: rotate(180deg);
   }
@@ -135,7 +114,7 @@
   }
 }
 
-.swiper-button-prev {
+.swiper-button-prev-popular {
   @media (max-width: $bp-tablet) {
     left: calc(50% - 100px);
   }

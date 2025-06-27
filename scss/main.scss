@@ -8,6 +8,7 @@
 @import "./components/title";
 @import "./components/secondary-button";
 @import "./components/primary-button";
+@import "./components/swiper-arrow";
 
 @import "./layouts/header";
 @import "./layouts/hero";
@@ -15,6 +16,7 @@
 @import "./layouts/description";
 @import "./layouts/popular";
 @import "./layouts/restaurants";
+@import "./layouts/search";
 
 body {
   font-family: $font-source-sans-pro;
