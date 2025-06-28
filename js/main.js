@@ -76,11 +76,8 @@ window.addEventListener("resize", () => {
 navigator.geolocation.getCurrentPosition((position) => {
   console.log("position:", position);
 
-  let lat = position.coords.latitude;
-  let lon = position.coords.longitude;
-
-  lat = 48.6196;
-  lon = 22.2971;
+  const lat = position.coords.latitude;
+  const lon = position.coords.longitude;
 
   const getAddress = async () => {
     try {
