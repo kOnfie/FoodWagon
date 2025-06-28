@@ -72,3 +72,29 @@ window.addEventListener("resize", () => {
     swiperSearchSection.update();
   }
 });
+
+navigator.geolocation.getCurrentPosition((position) => {
+  console.log("position:", position);
+
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
+
+  lat = 48.6196;
+  lon = 22.2971;
+
+  const getAddress = async () => {
+    try {
+      const res = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}`);
+
+      const { address } = await res.json();
+      console.log("data:", address);
+
+      document.querySelector(".header__location--name").innerHTML =
+        address.road + ", " + (address.village || address.city) + ", " + address.country;
+    } catch (error) {
+      console.log("Помилка:", error);
+    }
+  };
+
+  getAddress();
+});
