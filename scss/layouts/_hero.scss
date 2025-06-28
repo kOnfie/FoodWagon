@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("/images/hero/hero-bg.jpg");
+  background-image: url("../../images/hero/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -148,7 +148,7 @@
       &--top {
         gap: 0;
       }
-      
+
       &--icon {
         min-width: 0.625rem;
       }
