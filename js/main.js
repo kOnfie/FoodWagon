@@ -106,5 +106,13 @@ loginButton.addEventListener("click", () => {
 });
 
 document.querySelector(".modal__close").addEventListener("click", () => {
-  document.getElementById("authModal").classList.remove("active");
+  modal.classList.remove("active");
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" || event.key === "Esc") {
+    if (modal && modal.classList.contains("active")) {
+      modal.classList.remove("active");
+    }
+  }
 });

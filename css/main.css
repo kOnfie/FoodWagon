@@ -186,7 +186,7 @@ table {
 .swiper-arrow:after {
   content: "";
   display: block;
-  background-image: url("/images/popular/arrow.svg");
+  background-image: url("/FoodWagon/images/popular/arrow.svg");
   background-repeat: no-repeat;
   width: 1.25rem;
   height: 1.875rem;
@@ -413,7 +413,7 @@ table {
 }
 
 .hero {
-  background-image: url("/images/hero/hero-bg.jpg");
+  background-image: url("/FoodWagon/images/hero/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1017,7 +1017,7 @@ table {
 }
 
 .proceed {
-  background-image: url("/images/proceed/background.jpg");
+  background-image: url("/FoodWagon/images/proceed/background.jpg");
   background-position: center;
   background-size: cover;
   padding-top: 91px;
