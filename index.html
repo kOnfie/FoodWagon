@@ -52,7 +52,7 @@
                 </svg>
                 <p class="header__location--text">
                   Current Location
-                  <span class="header__location--name">Mohammadpur Bus Stand, Dhaka</span>
+                  <span class="header__location--name">Loading...</span>
                 </p>
               </div>
 
@@ -63,7 +63,7 @@
                   <input type="text" name="search" id="search" placeholder="Search Food" />
                 </div>
 
-                <button class="header__login header__login--btn">
+                <button class="header__login">
                   <img src="./images/user.png" alt="Auth user" />
                   <p>Login</p>
                 </button>
@@ -804,6 +804,20 @@ Delivery"
         </div>
       </footer>
       <!-- footer end -->
+
+      <div class="modal active" id="authModal">
+        <div class="modal__content">
+          <h2>Welcome Back!</h2>
+          <p>Please login to continue</p>
+          <form class="auth-form">
+            <input type="text" placeholder="Your name" required />
+            <input type="tel" placeholder="Phone number" required />
+            <input type="password" placeholder="Password" required />
+            <button type="submit" class="primary-button">Login</button>
+          </form>
+          <button type="submit" class="modal__close">&times;</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>

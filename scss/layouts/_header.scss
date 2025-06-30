@@ -86,27 +86,29 @@
   }
 
   &__login {
-    &--btn {
-      position: relative;
+    position: relative;
 
-      overflow: hidden;
+    overflow: hidden;
 
-      display: flex;
-      align-items: center;
-      gap: 0.625rem;
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
 
-      border-radius: 0.5rem;
-      background-color: $color-white;
-      box-shadow: 0px 20px 40px 0px rgba(255, 174, 0, 0.29), 0px 5px 10px 0px rgba(255, 174, 0, 0.26);
+    border-radius: 0.5rem;
+    background-color: $color-white;
+    box-shadow: 0px 20px 40px 0px rgba(255, 174, 0, 0.29), 0px 5px 10px 0px rgba(255, 174, 0, 0.26);
 
-      padding: 0.5938rem 1.5rem;
+    padding: 0.5938rem 1.5rem;
 
-      cursor: pointer;
+    cursor: pointer;
 
-      img {
-        width: 1rem;
-        height: 1.125rem;
-      }
+    transition: all 0.3s ease;
+
+    color: $color-yellow;
+
+    img {
+      width: 1rem;
+      height: 1.125rem;
     }
 
     p {
@@ -115,6 +117,14 @@
       background: $color-yellow-button;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+
+      transition: background 0.3s ease-in-out;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        box-shadow: 0px 5px 40px 0px rgba(255, 174, 0, 1), 0px 5px 10px 0px rgba(255, 174, 0, 0.26);
+      }
     }
   }
 

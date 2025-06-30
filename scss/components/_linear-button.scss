@@ -5,7 +5,25 @@
   padding: 1.0625rem 3rem;
 
   background: linear-gradient(95.71deg, rgba(255, 122, 122, 1) 0%, rgba(246, 89, 0, 1) 100%);
+
   border-radius: 0.5rem;
 
   cursor: pointer;
+
+  transition: all 0.3s;
+
+  @media (any-hover: hover) {
+    &:hover {
+      transform: scale(1.05);
+
+      background: #fff;
+
+      outline: 3px solid $color-red;
+      color: $color-red;
+
+      svg {
+        color: $color-red;
+      }
+    }
+  }
 }

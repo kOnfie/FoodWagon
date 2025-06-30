@@ -95,3 +95,16 @@ navigator.geolocation.getCurrentPosition((position) => {
 
   getAddress();
 });
+
+const loginButton = document.querySelector(".header__login");
+const modal = document.querySelector("#authModal");
+
+loginButton.addEventListener("click", () => {
+  modal.classList.add("active");
+
+  document.body.style.overflow = "hidden";
+});
+
+document.querySelector(".modal__close").addEventListener("click", () => {
+  document.getElementById("authModal").classList.remove("active");
+});
