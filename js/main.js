@@ -107,12 +107,14 @@ loginButton.addEventListener("click", () => {
 
 document.querySelector(".modal__close").addEventListener("click", () => {
   modal.classList.remove("active");
+  document.body.style.overflow = "auto";
 });
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape" || event.key === "Esc") {
     if (modal && modal.classList.contains("active")) {
       modal.classList.remove("active");
+      document.body.style.overflow = "auto";
     }
   }
 });
@@ -120,5 +122,6 @@ document.addEventListener("keydown", (event) => {
 modal.addEventListener("click", function (event) {
   if (event.target === this) {
     this.classList.remove("active");
+    document.body.style.overflow = "auto";
   }
 });
