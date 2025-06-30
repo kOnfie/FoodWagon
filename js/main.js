@@ -116,3 +116,9 @@ document.addEventListener("keydown", (event) => {
     }
   }
 });
+
+modal.addEventListener("click", function (event) {
+  if (event.target === this) {
+    this.classList.remove("active");
+  }
+});
