@@ -125,3 +125,16 @@ modal.addEventListener("click", function (event) {
     document.body.style.overflow = "auto";
   }
 });
+
+document.querySelector(".auth-form").addEventListener("submit", function (event) {
+  event.preventDefault();
+  console.log(event);
+
+  const formData = new FormData(event.target);
+
+  const name = formData.get("name");
+  const phone = formData.get("phone");
+  const password = formData.get("password");
+
+  alert(`User: ${name}, phone: ${phone}, password: ${password}`);
+});
